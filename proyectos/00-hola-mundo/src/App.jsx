@@ -3,28 +3,19 @@ import './App.css';
 import { TwitterFollowCard } from './assets/twFollowCard';
 
 export function App (){
-    
-    const [name, setName] = useState('midudev');
-
-    console.log('name', name);  
-
     return (
         <section className='App'>
-            <TwitterFollowCard userName={name}>
+            <TwitterFollowCard userName="midudev">
                 Miguel Angel Durand
             </TwitterFollowCard>
 
-            <TwitterFollowCard userName="zxvgxl" >
+            <TwitterFollowCard userName="zxvgxl" inicialIsFollowing={true}>
             zxvgxl
             </TwitterFollowCard>
 
             <TwitterFollowCard userName="juanmadb_">
                 Juanma
             </TwitterFollowCard>
-
-            <button onClick={() =>setName('Juanma')}>
-                Cambio nombre
-            </button>
 
         </section>
     );

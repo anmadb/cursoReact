@@ -38,14 +38,36 @@
     border: 1px solid #0e99cf;
 }
 
-.tw-followcard-button.is-following{
-    border: 1px solid red;
+.tw-followcard-button:hover {
+    opacity: .8;   
 }
 
-.tw-followcard-button:hover {
-    background: #0e99cf;
+.tw-folloCard-text{
+    display: block;
+}
+
+.tw-followcard-button.is-following{
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff; 
+    width: 140px;
 }
 
 .tw-followcard-button.is-following:hover{
-    background: red;
+    background: rgb(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+}
+
+.tw-followcard-button.is-following:hover .tw-folloCard-text{
+    display: none;
+}
+
+.tw-followcard-button.is-following:hover .tw-folloCard-stopFollow{
+    display: block;
+}
+
+
+.tw-folloCard-stopFollow{
+    display: none;
 }
